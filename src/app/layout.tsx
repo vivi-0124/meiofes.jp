@@ -8,8 +8,8 @@ import Footer from '@/components/layout/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: '名桜大学祭2024 | 公式サイト',
-  description: '11月開催の名桜大学祭2024の公式ウェブサイトです。イベント情報、出店情報、協賛のお知らせなどを掲載しています。',
+  title: '名桜大学祭 2025 | 公式サイト',
+  description: '11月開催の名桜大学祭2025の公式ウェブサイトです。イベント情報、出店情報、協賛のお知らせなどを掲載しています。',
 };
 
 export default function RootLayout({

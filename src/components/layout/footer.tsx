@@ -61,15 +61,12 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4 text-lg">お問い合わせ</h3>
             <address className="not-italic text-muted-foreground">
-              <p>名桜大学 大学祭実行委員会</p>
+              <p>第32回名桜大学祭実行委員会</p>
               <p>〒905-8585</p>
               <p>沖縄県名護市字為又1220-1</p>
               <p className="mt-2">Email: info@meio-festival.com</p>
               <p>Tel: 0980-XX-XXXX</p>
             </address>
-            <Button className="mt-4" variant="outline">
-              お問い合わせはこちら
-            </Button>
           </div>
         </div>
         
@@ -77,7 +74,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} 名桜大学祭実行委員会 All Rights Reserved.
+            &copy; {currentYear} 第32回名桜大学祭実行委員会 All Rights Reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

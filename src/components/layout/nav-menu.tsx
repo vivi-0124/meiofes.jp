@@ -6,12 +6,12 @@ import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-interface MobileNavProps {
+interface NavMenuProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-export function MobileNav({ isOpen, onClose }: MobileNavProps) {
+export function NavMenu({ isOpen, onClose }: NavMenuProps) {
   return (
     <div 
       className={cn(
