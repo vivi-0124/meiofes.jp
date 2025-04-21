@@ -25,6 +25,9 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4">
       <section className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)] text-center">
+        <div className="mb-6">
+          <img src="/32rogo.svg" alt="名桜大学祭2025ロゴ" className="w-48 md:w-64 mx-auto" />
+        </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
           名桜大学祭<span className="text-primary">2025</span>
         </h1>
