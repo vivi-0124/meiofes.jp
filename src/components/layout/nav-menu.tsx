@@ -20,10 +20,10 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
         isOpen ? "translate-x-0" : "translate-x-full"
       )}
     >
-      <div className="container h-full flex flex-col relative pb-20 px-0 max-w-full">
-        <div className="flex items-center justify-between h-20 px-4">
+      <div className="container h-full flex flex-col relative pb-20 px-0 max-w-full py-4">
+        <div className="flex items-center justify-between h-16 px-8">
           <Link href="/" className="flex items-center space-x-2" onClick={onClose}>
-            <img src="/32rogo.svg" alt="名桜大学祭2025ロゴ" className="h-12 w-auto" />
+            <img src="/32rogo.svg" alt="名桜大学祭2025ロゴ" className="h-10 w-auto" />
           </Link>
           <Button 
             variant="ghost" 
@@ -32,7 +32,7 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
             aria-label="閉じる"
             className="h-10 w-10 text-foreground dark:text-white hover:bg-background/10 dark:hover:bg-white/10"
           >
-            <X className="h-7 w-7" />
+            <X className="h-6 w-6" />
           </Button>
         </div>
         
