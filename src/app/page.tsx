@@ -24,21 +24,17 @@ export default function Home() {
 
   return (
     <div className="container mx-auto px-4">
-      <section className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)] text-center">
+      <section className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] text-center">
         <div className="mb-6">
           <img src="/32rogo.svg" alt="名桜大学祭2025ロゴ" className="w-48 md:w-64 mx-auto" />
         </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-          名桜大学祭<span className="text-primary">2025</span>
+          第32回名桜大学祭
         </h1>
         <p className="text-xl mb-8 max-w-2xl">
-          11月開催予定の名桜大学祭公式サイトです。<br />
-          詳細情報は随時更新していきます。
+          2025/11/22(土).23(日)<br />
+          @名桜大学キャンパス
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Button size="lg">イベント情報</Button>
-          <Button size="lg" variant="outline">協賛のお願い</Button>
-        </div>
       </section>
 
       <div className="max-w-6xl mx-auto my-12 grid grid-cols-1 gap-8">
