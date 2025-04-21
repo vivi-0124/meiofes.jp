@@ -106,29 +106,31 @@ export default function Home() {
         <div id="info" className="bg-card border rounded-lg shadow-sm p-0 overflow-hidden">
           <h2 className="text-3xl font-bold text-center py-8 border-b">イベント情報</h2>
           <div className="p-6">
-            <div className="grid grid-cols-[60px_1fr] gap-6 mb-6 pb-6 border-b">
-              <div className="font-bold text-lg">日時</div>
-              <div>
-                <p className="mb-1">2025年11月22日（土）・23日（日）</p>
-                <p className="text-muted-foreground">10:30 開場 | 11:00 開演</p>
-              </div>
-            </div>
-            
+
             <div className="grid grid-cols-[60px_1fr] gap-6 mb-6 pb-6 border-b">
               <div className="font-bold text-lg">主催</div>
               <div>
                 <p>第32回名桜大学祭実行委員会</p>
               </div>
             </div>
-            <div className="w-full rounded-lg overflow-hidden mt-6">
 
-            <div className="grid grid-cols-[60px_1fr] gap-6 mb-6 pb-6">
+            <div className="grid grid-cols-[60px_1fr] gap-6 mb-6 pb-6 border-b">
+              <div className="font-bold text-lg">日時</div>
+              <div>
+                <p className="mb-1">2025年11月22日(土).23日(日)</p>
+                <p className="text-muted-foreground">10:30 開場 | 11:00 開演</p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-[60px_1fr] gap-6 pb-6">
               <div className="font-bold text-lg">会場</div>
               <div>
                 <p className="mb-1 flex items-center">名桜大学</p>
                 <p className="text-muted-foreground">〒905-8585<br />沖縄県名護市為又1220-1</p>
               </div>
             </div>
+
+            <div className="w-full rounded-lg overflow-hidden">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14266.998553880376!2d127.96357358255614!3d26.62447061154936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e4f8a943c7f5bb%3A0x6b901e4404efc3db!2z5ZCN5qGc5aSn5a2m!5e0!3m2!1sja!2sjp!4v1745164331471!5m2!1sja!2sjp"
                 width="100%" 
