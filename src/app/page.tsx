@@ -106,7 +106,7 @@ export default function Home() {
         <div id="info" className="bg-card border rounded-lg shadow-sm p-0 overflow-hidden">
           <h2 className="text-3xl font-bold text-center py-8 border-b">イベント情報</h2>
           <div className="p-6">
-            <div className="grid grid-cols-[60px_1fr] gap-6 mb-6 border-b pb-6">
+            <div className="grid grid-cols-[60px_1fr] gap-6 mb-6 pb-6 border-b">
               <div className="font-bold text-lg">日時</div>
               <div>
                 <p className="mb-1">2025年11月22日（土）・23日（日）</p>
@@ -114,7 +114,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="grid grid-cols-[60px_1fr] gap-6 mb-6">
+            <div className="grid grid-cols-[60px_1fr] gap-6 mb-6 pb-6 border-b">
               <div className="font-bold text-lg">主催</div>
               <div>
                 <p>第32回名桜大学祭実行委員会</p>
@@ -122,7 +122,7 @@ export default function Home() {
             </div>
             <div className="w-full rounded-lg overflow-hidden mt-6">
 
-            <div className="grid grid-cols-[60px_1fr] gap-6 mb-6 border-b pb-6">
+            <div className="grid grid-cols-[60px_1fr] gap-6 mb-6 pb-6">
               <div className="font-bold text-lg">会場</div>
               <div>
                 <p className="mb-1 flex items-center">名桜大学</p>
