@@ -34,8 +34,8 @@ const Header = () => {
               <div className="flex items-center space-x-3">
                 <Link href="/" className="flex items-center space-x-2">
                   <img src="/light-rogo.svg" alt="名桜大学祭2025ロゴ" className="h-12 md:h-16 w-auto" />
+                  <p className="text-lg">名桜大学祭</p>
                 </Link>
-                <p className="text-lg">名桜大学祭</p>
               </div>
 
               <div className="flex items-center space-x-3">

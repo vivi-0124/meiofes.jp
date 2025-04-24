@@ -41,7 +41,7 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
         <nav className="flex flex-col p-10 space-y-8">
           <Link 
             href="/" 
-            className="text-3xl font-medium transition-colors hover:text-primary"
+            className="text-3xl font-medium transition-colors hover:text-primary hover:bg-gray-100 rounded-lg p-2 text-center w-full flex justify-center"
             onClick={onClose}
           >
             TOP
@@ -49,7 +49,7 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
           
           <Link 
             href="/news" 
-            className="text-3xl font-medium transition-colors hover:text-primary flex items-center justify-between"
+            className="text-3xl font-medium transition-colors hover:text-primary hover:bg-gray-100 rounded-lg p-2 text-center w-full flex justify-center"
             onClick={onClose}
           >
             お知らせ
@@ -57,7 +57,7 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
           
           <Link 
             href="/about" 
-            className="text-3xl font-medium transition-colors hover:text-primary flex items-center justify-between"
+            className="text-3xl font-medium transition-colors hover:text-primary hover:bg-gray-100 rounded-lg p-2 text-center w-full flex justify-center"
             onClick={onClose}
           >
             大学祭について
@@ -65,7 +65,7 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
           
           <Link 
             href="/sponsors" 
-            className="text-3xl font-medium transition-colors hover:text-primary flex items-center justify-between"
+            className="text-3xl font-medium transition-colors hover:text-primary hover:bg-gray-100 rounded-lg p-2 text-center w-full flex justify-center"
             onClick={onClose}
           >
             企業様へ
@@ -73,7 +73,7 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
           
           <Link 
             href="/info" 
-            className="text-3xl font-medium transition-colors hover:text-primary flex items-center justify-between"
+            className="text-3xl font-medium transition-colors hover:text-primary hover:bg-gray-100 rounded-lg p-2 text-center w-full flex justify-center"
             onClick={onClose}
           >
             開催情報
@@ -83,10 +83,10 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
         <div className="absolute bottom-10 right-4">
           <Link 
             href="/contact" 
-            className="flex items-center bg-black rounded-full py-2 px-6 shadow-lg text-white"
+            className="flex items-center bg-black rounded-full py-2 px-4 shadow-lg text-white"
             onClick={onClose}
           >
-            <img src="/32rogo.svg" alt="ロゴ" className="h-10 w-10 mr-2" />
+            <img src="/rogo.svg" alt="ロゴ" className="h-10 w-10 mr-2" />
             <div>
               <div className="text-xl font-bold">お問い合わせ</div>
             </div>
