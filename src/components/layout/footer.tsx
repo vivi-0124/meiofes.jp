@@ -11,23 +11,25 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <Link href="/" className="inline-block">
-              <div className="flex flex-col">
-                <span className="font-bold text-2xl">名桜大学祭</span>
-                <span className="text-primary font-semibold">2025 OFFICIAL WEBSITE</span>
+            <div className="flex justify-between items-start">
+              <Link href="/" className="inline-block">
+                <div className="flex flex-col">
+                  <span className="font-bold text-2xl">名桜大学祭</span>
+                  <span className="text-primary font-semibold">2025 OFFICIAL WEBSITE</span>
+                </div>
+              </Link>
+              <div className="flex space-x-4">
+                <Link href="https://www.instagram.com/meiofes32" target="_blank" rel="noopener noreferrer">
+                  <Button variant="ghost" size="icon" aria-label="Instagram">
+                    <Instagram className="h-5 w-5" />
+                  </Button>
+                </Link>
               </div>
-            </Link>
-            <p className="mt-4 text-muted-foreground max-w-md">
+            </div>
+            <p className="mt-4 text-muted-foreground max-w-2xl">
               名桜大学祭は毎年11月に開催される沖縄県名護市の名桜大学の大学祭です。
               学生主催のイベント、フード、パフォーマンスなど様々な催しを予定しています。
             </p>
-            <div className="flex space-x-4 mt-6">
-              <Link href="https://www.instagram.com/meiofes32" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon" aria-label="Instagram">
-                  <Instagram className="h-5 w-5" />
-                </Button>
-              </Link>
-            </div>
           </div>
           
           <div>
@@ -69,7 +71,7 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} 第32回名桜大学祭実行委員会 All Rights Reserved.
+            &copy; {currentYear} 第32回名桜大学祭実行委員会
           </p>
         </div>
       </div>
