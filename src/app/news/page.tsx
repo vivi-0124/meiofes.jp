@@ -15,11 +15,12 @@ export default async function NewsPage() {
   return (
     <div className="container mx-auto py-12 px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-2">お知らせ</h1>
-        <p className="text-muted-foreground mb-8">
-          名桜大学祭に関する最新情報をお届けします
-        </p>
-        
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold mb-2">お知らせ</h1>
+          <p className="text-xl text-muted-foreground">
+            名桜大学祭に関する最新情報をお届けします
+          </p>
+        </div>
         <div className="space-y-6">
           {newsItems.map((item: any) => (
             <Card key={item.id}>

@@ -34,7 +34,7 @@ export default async function Home() {
               <Building2 className="h-8 w-8 text-primary" />
               <div>
                 <p className="font-medium">名桜大学祭とは?</p>
-                <p className="text-sm text-muted-foreground">名桜大学の伝統と革新が融合する、年に一度の祭典。
+                <p className="text-sm text-muted-foreground">沖縄北部・名護市の青春が輝く、活気あふれる2日間。
                 学生主催のイベント、フード、パフォーマンスなど様々な催しを予定しています。</p>
               </div>
             </div>

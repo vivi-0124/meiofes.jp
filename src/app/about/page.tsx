@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Users, Trophy, Music, Store } from "lucide-react";
+import { MapPin, Calendar, Users, Trophy, Music, Store, PaintBucket } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -7,7 +7,7 @@ export default function AboutPage() {
     {
       icon: Music,
       title: "ステージパフォーマンス",
-      description: "学生バンド、ダンス、お笑いなど、多彩なステージイベントを開催",
+      description: "学生バンド、ダンス、豪華アーティストなど、多彩なステージイベントを開催",
     },
     {
       icon: Store,
@@ -15,9 +15,9 @@ export default function AboutPage() {
       description: "学生団体による飲食店や企画出店が多数出展",
     },
     {
-      icon: Trophy,
-      title: "コンテスト企画",
-      description: "様々な競技や催し物で盛り上がりを創出",
+      icon: PaintBucket,
+      title: "装飾展示",
+      description: "キャンパス全体を彩る学生制作の装飾物",
     },
   ];
 
@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">大学祭について</h1>
           <p className="text-xl text-muted-foreground">
-            名桜大学の伝統と革新が融合する、年に一度の祭典
+            沖縄北部・名護市の青春が輝く、活気あふれる2日間
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function AboutPage() {
               <Calendar className="h-6 w-6 text-primary" />
               <div>
                 <h3 className="font-semibold">開催日時</h3>
-                <p className="text-muted-foreground">2024年11月予定</p>
+                <p className="text-muted-foreground">2025年11月22日(土).23日(日)</p>
               </div>
             </div>
             
@@ -54,7 +54,7 @@ export default function AboutPage() {
               <Users className="h-6 w-6 text-primary" />
               <div>
                 <h3 className="font-semibold">主催</h3>
-                <p className="text-muted-foreground">名桜大学祭実行委員会</p>
+                <p className="text-muted-foreground">第32回名桜大学祭実行委員会</p>
               </div>
             </div>
           </div>
@@ -62,13 +62,13 @@ export default function AboutPage() {
           <Card>
             <CardHeader>
               <CardTitle>テーマ</CardTitle>
-              <CardDescription>2024年度 大学祭テーマ</CardDescription>
+              <CardDescription>2025年度 大学祭テーマ</CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-2xl font-bold text-primary mb-4">Coming Soon...</p>
+              <p className="text-2xl font-bold text-primary mb-4">ひとやすみ</p>
               <p className="text-muted-foreground">
-                今年度のテーマは準備中です。<br />
-                決定次第、こちらで発表いたします。
+                忙しい日常から離れ、思い思いの時間を過ごす場所。<br />
+                ここで過ごすひとときが、心地よい休息になりますように。
               </p>
             </CardContent>
           </Card>
@@ -91,18 +91,6 @@ export default function AboutPage() {
                 </Card>
               );
             })}
-          </div>
-        </div>
-
-        <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">参加をご検討の方へ</h2>
-          <p className="text-muted-foreground mb-6">
-            出店・協賛・ボランティアなど、様々な形で大学祭に参加いただけます。<br />
-            詳しい情報は各ページをご確認ください。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg">出店について</Button>
-            <Button size="lg" variant="outline">協賛のお願い</Button>
           </div>
         </div>
       </div>
