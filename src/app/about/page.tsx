@@ -74,7 +74,7 @@ export default function AboutPage() {
           </Card>
         </div>
 
-        <div className="mb-12">
+        <div className="mb-0">
           <h2 className="text-2xl font-bold mb-6">開催内容</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {features.map((feature, index) => {
