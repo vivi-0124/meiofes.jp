@@ -2,25 +2,14 @@ import Link from "next/link";
 import { ChevronRight, CalendarDays, Building2, MapPin, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { getNewsList } from "@/lib/microcms";
 
-export default function Home() {
-  const newsItems = [
-    {
-      title: "名桜大学祭2025 ティザーサイトオープン",
-      date: "2024-05-01",
-      category: "お知らせ",
-    },
-    {
-      title: "模擬店・出展団体募集開始",
-      date: "2024-06-15",
-      category: "募集",
-    },
-    {
-      title: "ボランティアスタッフ募集中",
-      date: "2024-07-01",
-      category: "募集",
-    }
-  ];
+export const revalidate = 60; // 60秒ごとに再検証
+
+export default async function Home() {
+  // MicroCMSからニュース記事を取得（最新の3件のみ）
+  const newsItems = await getNewsList();
+  const latestNews = newsItems.slice(0, 3);
 
   return (
     <div className="container mx-auto px-4">
@@ -61,16 +50,16 @@ export default function Home() {
         <div id="news" className="bg-card border rounded-lg shadow-sm">
           <h2 className="text-3xl font-bold text-center py-8 border-b">お知らせ</h2>
           <div className="space-y-4 p-6">
-            {newsItems.map((news, index) => (
-              <div key={index} className="border-b pb-4 last:border-0 last:pb-0">
+            {latestNews.map((news: any) => (
+              <div key={news.id} className="border-b pb-4 last:border-0 last:pb-0">
                 <div className="flex items-center gap-2 mb-2">
                   <Badge variant="secondary">{news.category}</Badge>
                   <div className="flex items-center text-sm text-muted-foreground">
                     <CalendarDays className="h-4 w-4 mr-1" />
-                    {news.date}
+                    {news.publishedAt ? new Date(news.publishedAt).toLocaleDateString('ja-JP') : ''}
                   </div>
                 </div>
-                <Link href={`/news/${index}`} className="text-lg font-medium hover:text-primary transition-colors">
+                <Link href={`/news/${news.id}`} className="text-lg font-medium hover:text-primary transition-colors">
                   {news.title}
                 </Link>
               </div>
@@ -83,7 +72,6 @@ export default function Home() {
           </div>
           </div>
         </div>
-
 
         
         <div id="info" className="bg-card border rounded-lg shadow-sm p-0 overflow-hidden">
