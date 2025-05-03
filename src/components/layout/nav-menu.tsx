@@ -62,27 +62,11 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
           >
             大学祭について
           </Link>
-          
-          <Link 
-            href="/sponsors" 
-            className="text-3xl font-medium transition-colors hover:text-primary hover:bg-gray-100 rounded-lg p-2 text-center w-full flex justify-center"
-            onClick={onClose}
-          >
-            企業様へ
-          </Link>
-          
-          <Link 
-            href="/info" 
-            className="text-3xl font-medium transition-colors hover:text-primary hover:bg-gray-100 rounded-lg p-2 text-center w-full flex justify-center"
-            onClick={onClose}
-          >
-            開催情報
-          </Link>
         </nav>
         
         <div className="absolute bottom-10 right-4">
           <Link 
-            href="/contact" 
+            href="#footer"
             className="flex items-center bg-black rounded-full py-2 px-4 shadow-lg text-white"
             onClick={onClose}
           >

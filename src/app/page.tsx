@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronRight, CalendarDays, Building2, MapPin, HelpCircle, ExternalLink } from "lucide-react";
+import { ChevronRight, CalendarDays, Building2, MapPin, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -84,24 +84,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="sponsors" className="bg-card border rounded-lg shadow-sm">
-          <h2 className="text-3xl font-bold text-center py-8 border-b">企業様へ</h2>
-          <div className="p-6">
-            <div className="flex items-center gap-3 mb-4">
-              <Building2 className="h-8 w-8 text-primary" />
-              <div>
-                <p className="font-medium">協賛企業様募集中</p>
-                <p className="text-sm text-muted-foreground">各種協賛プランをご用意しています</p>
-              </div>
-            </div>
-            <div className="flex justify-end mt-4">
-              <Link href="/sponsors" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                協賛について
-                <ChevronRight className="h-4 w-4 inline ml-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
+
         
         <div id="info" className="bg-card border rounded-lg shadow-sm p-0 overflow-hidden">
           <h2 className="text-3xl font-bold text-center py-8 border-b">イベント情報</h2>
@@ -141,33 +124,10 @@ export default function Home() {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div className="flex justify-end mt-4">
-              <Link href="/info" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                詳しく見る
-                <ChevronRight className="h-4 w-4 inline ml-1" />
-              </Link>
-            </div>
           </div>
         </div>
 
-        <div id="faq" className="bg-card border rounded-lg shadow-sm">
-          <h2 className="text-3xl font-bold text-center py-8 border-b">よくあるご質問</h2>
-          <div className="space-y-4 p-6">
-            <div className="flex items-center gap-3 mb-4">
-              <HelpCircle className="h-8 w-8 text-primary" />
-              <div>
-                <p className="font-medium">お困りの方はこちら</p>
-                <p className="text-sm text-muted-foreground">よくある質問をまとめています</p>
-              </div>
-            </div>
-            <div className="flex justify-end mt-4">
-              <Link href="/faq" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                すべての質問
-                <ChevronRight className="h-4 w-4 inline ml-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   );

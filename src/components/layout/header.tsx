@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, Search, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { NavMenu } from "@/components/layout/nav-menu";
@@ -39,9 +39,6 @@ const Header = () => {
               </div>
 
               <div className="flex items-center space-x-3">
-                <Button variant="ghost" size="icon" aria-label="検索" className="h-12 w-12 md:h-16 md:w-16 text-white">
-                  <Search className="h-6 w-6 md:h-8 md:w-8" />
-                </Button>
                 <Button 
                   variant="ghost" 
                   size="icon" 
