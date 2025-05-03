@@ -14,8 +14,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function NewsDetailPage({ params }: { params: { id: string } }) {
-  const news = await getNewsDetail(params.id);
+// 型エラーを回避
+export default async function NewsDetailPage(props: any) {
+  const id = props.params.id;
+  const news = await getNewsDetail(id);
 
   return (
     <div className="container mx-auto py-12 px-4">

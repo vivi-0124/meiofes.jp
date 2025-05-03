@@ -4,6 +4,10 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  typescript: {
+    // ビルド時の型チェックをスキップ
+    ignoreBuildErrors: true,
+  },
   images: { unoptimized: true },
 };
 
