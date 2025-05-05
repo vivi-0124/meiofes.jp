@@ -66,10 +66,6 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent>
               <p className="text-2xl font-bold text-primary mb-4">ひとやすみ</p>
-              <p className="text-muted-foreground">
-                忙しい日常から離れ、思い思いの時間を過ごす場所。<br />
-                ここで過ごすひとときが、心地よい休息になりますように。
-              </p>
             </CardContent>
           </Card>
         </div>
