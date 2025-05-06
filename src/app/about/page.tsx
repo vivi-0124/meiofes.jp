@@ -65,7 +65,10 @@ export default function AboutPage() {
               <CardDescription>2025年度 大学祭テーマ</CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-2xl font-bold text-primary mb-4">ひとやすみ</p>
+              <p className="text-2xl font-bold text-primary mb-4">Coming Soon...</p>
+              <p className="text-sm font-medium text-primary mb-4">今年度のテーマは準備中です。
+              <br />
+              決定次第、こちらで発表いたします。</p>
             </CardContent>
           </Card>
         </div>
