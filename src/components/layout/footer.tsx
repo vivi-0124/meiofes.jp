@@ -15,7 +15,7 @@ const Footer = () => {
               <Link href="/" className="inline-block">
                 <div className="flex flex-col">
                   <span className="font-bold text-2xl">名桜大学祭</span>
-                  <span className="text-primary font-semibold">2025 OFFICIAL WEBSITE</span>
+                  <span className="font-semibold">2025 OFFICIAL WEBSITE</span>
                 </div>
               </Link>
               <div className="flex space-x-4">
