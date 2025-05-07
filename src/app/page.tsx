@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronRight, CalendarDays, Building2, MapPin, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -15,7 +16,14 @@ export default async function Home() {
     <div className="container mx-auto px-4">
       <section className="flex flex-col items-center justify-center min-h-[calc(100vh-112px)] text-center">
         <div className="mb-6">
-          <img src="/rogo.svg" alt="名桜大学祭2025ロゴ" className="w-64 md:w-80 mx-auto" />
+          <Image
+            src="/rogo.svg"
+            alt="名桜大学祭2025ロゴ"
+            width={320}
+            height={320}
+            className="w-64 md:w-80 mx-auto"
+            priority
+          />
         </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
           第32回名桜大学祭

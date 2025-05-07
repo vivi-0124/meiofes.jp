@@ -5,6 +5,7 @@ import Link from "next/link";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface NavMenuProps {
   isOpen: boolean;
@@ -24,7 +25,14 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
         <div className="bg-black text-white rounded-full">
           <div className="flex items-center justify-between h-16 md:h-20 px-4">
             <Link href="/" className="flex items-center space-x-2" onClick={onClose}>
-              <img src="/light-rogo.svg" alt="名桜大学祭2025ロゴ" className="h-12 md:h-16 w-auto" />
+              <Image
+                src="/light-rogo.svg"
+                alt="名桜大学祭2025ロゴ"
+                width={64}
+                height={64}
+                className="h-12 md:h-16 w-auto"
+                priority
+              />
               <p className="text-lg">名桜大学祭</p>
             </Link>
             <Button 
@@ -70,7 +78,6 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
             className="flex items-center bg-black rounded-full py-2 px-4 shadow-lg text-white"
             onClick={onClose}
           >
-            <img src="/rogo.svg" alt="ロゴ" className="h-10 w-10 mr-2" />
             <div>
               <div className="text-xl font-bold">お問い合わせ</div>
             </div>

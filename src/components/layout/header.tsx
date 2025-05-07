@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -33,7 +34,14 @@ const Header = () => {
             <div className="flex h-16 md:h-20 items-center justify-between">
               <div className="flex items-center space-x-3">
                 <Link href="/" className="flex items-center space-x-2">
-                  <img src="/light-rogo.svg" alt="名桜大学祭2025ロゴ" className="h-12 md:h-16 w-auto" />
+                  <Image
+                    src="/light-rogo.svg"
+                    alt="名桜大学祭2025ロゴ"
+                    width={64}
+                    height={64}
+                    className="h-12 md:h-16 w-auto"
+                    priority
+                  />
                   <p className="text-lg">名桜大学祭</p>
                 </Link>
               </div>
