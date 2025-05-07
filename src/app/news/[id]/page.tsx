@@ -70,9 +70,9 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
 
         <h1 className="text-4xl font-bold mb-6">{news.title}</h1>
         
-        <div className="prose max-w-none">
+        {/* <div className="prose max-w-none">
           {parse(news.content, options)}
-        </div>
+        </div> */}
       </div>
     </div>
   );
