@@ -17,16 +17,16 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
     <div 
       className={cn(
         "fixed inset-0 z-50 transform transition-transform duration-300 ease-in-out",
-        "bg-white text-black",
+        "bg-background text-black",
         isOpen ? "translate-x-0" : "translate-x-full"
       )}
     >
       <div className="container h-full flex flex-col relative pb-20 px-4 max-w-full py-4">
-        <div className="bg-black text-white rounded-full">
+        <div className="bg-white text-black rounded-full">
           <div className="flex items-center justify-between h-16 md:h-20 px-4">
             <Link href="/" className="flex items-center space-x-2" onClick={onClose}>
               <Image
-                src="/light-rogo.svg"
+                src="/rogo.svg"
                 alt="名桜大学祭2025ロゴ"
                 width={64}
                 height={64}
@@ -40,7 +40,7 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
               size="icon" 
               onClick={onClose} 
               aria-label="閉じる"
-              className="h-12 w-12 md:h-16 md:w-16 text-white"
+              className="h-12 w-12 md:h-16 md:w-16 text-black"
             >
               <X className="h-6 w-6 md:h-8 md:w-8" />
             </Button>
@@ -75,7 +75,7 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
         <div className="absolute bottom-10 right-4">
           <Link 
             href="#footer"
-            className="flex items-center bg-black rounded-full py-2 px-4 shadow-lg text-white"
+            className="flex items-center bg-white text-black rounded-full py-2 px-4 shadow-lg"
             onClick={onClose}
           >
             <div>

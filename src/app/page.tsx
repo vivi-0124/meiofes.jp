@@ -14,7 +14,7 @@ export default async function Home() {
 
   return (
     <div className="container mx-auto px-4">
-      <section className="flex flex-col items-center justify-center min-h-[calc(100vh-112px)] text-center">
+      <div id="hero" className="flex flex-col items-center justify-center min-h-[calc(100vh-112px)] text-center">
         <div className="mb-6">
           <Image
             src="/rogo.svg"
@@ -32,7 +32,7 @@ export default async function Home() {
           2025/11/22(土).23(日)<br />
           @名桜大学キャンパス
         </p>
-      </section>
+      </div>
 
       <div className="max-w-6xl mx-auto my-12 grid grid-cols-1 gap-8">
         <div id="about" className="bg-card border rounded-lg shadow-sm">

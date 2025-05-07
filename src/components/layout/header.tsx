@@ -26,7 +26,7 @@ const Header = () => {
       <div className="sticky top-0 z-50 w-full p-4">
         <header
           className={cn(
-            "w-full transition-all duration-300 rounded-full shadow-md bg-black text-white",
+            "w-full transition-all duration-300 rounded-full shadow-md bg-white text-black",
             isScrolled ? "shadow-lg" : ""
           )}
         >
@@ -35,7 +35,7 @@ const Header = () => {
               <div className="flex items-center space-x-3">
                 <Link href="/" className="flex items-center space-x-2">
                   <Image
-                    src="/light-rogo.svg"
+                    src="/rogo.svg"
                     alt="名桜大学祭2025ロゴ"
                     width={64}
                     height={64}
@@ -52,7 +52,7 @@ const Header = () => {
                   size="icon" 
                   aria-label="メニュー" 
                   onClick={() => setIsMenuOpen(true)}
-                  className="h-12 w-12 md:h-16 md:w-16 text-white"
+                  className="h-12 w-12 md:h-16 md:w-16 text-w"
                 >
                   <Menu className="h-6 w-6 md:h-8 md:w-8" />
                 </Button>

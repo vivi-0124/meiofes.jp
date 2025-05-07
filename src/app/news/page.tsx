@@ -29,7 +29,7 @@ export default async function NewsPage() {
                   <Badge variant="secondary">{item.category}</Badge>
                   <div className="flex items-center text-sm text-muted-foreground">
                     <CalendarDays className="h-4 w-4 mr-1" />
-                    {item.publishedAt ? new Date(item.publishedAt).toLocaleDateString('ja-JP') : ''}
+                    {item.publishedAt ? item.publishedAt.slice(0, 10) : ''}
                   </div>
                 </div>
                 <CardTitle className="text-xl">{item.title}</CardTitle>
