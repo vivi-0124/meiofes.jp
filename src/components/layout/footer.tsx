@@ -62,14 +62,6 @@ const Footer = () => {
         <Separator className="my-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              プライバシーポリシー
-            </Link>
-            <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              利用規約
-            </Link>
-          </div>
           <p className="text-sm text-muted-foreground">
             &copy; {currentYear} 第32回名桜大学祭実行委員会
           </p>
