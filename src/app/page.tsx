@@ -110,7 +110,8 @@ export default async function Home() {
             </div>
 
             <div className="w-full rounded-lg overflow-hidden">
-              <iframe 
+              <iframe
+                title="名桜大学祭会場"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14266.998553880376!2d127.96357358255614!3d26.62447061154936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e4f8a943c7f5bb%3A0x6b901e4404efc3db!2z5ZCN5qGc5aSn5a2m!5e0!3m2!1sja!2sjp!4v1745164331471!5m2!1sja!2sjp"
                 width="100%" 
                 height="50%" 
