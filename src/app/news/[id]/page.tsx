@@ -2,6 +2,9 @@ import { CalendarDays } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { getNewsDetail, getNewsList } from "@/lib/microcms";
 import Link from "next/link";
+import parse, { HTMLReactParserOptions, domToReact } from 'html-react-parser';
+import Image from 'next/image';
+import type { DOMNode } from 'html-react-parser';
 
 export const revalidate = 60;
 
@@ -19,6 +22,34 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
     // dynamic API の params を await して取得
     const { id } = await params;
     const news = await getNewsDetail(id);
+    // HTMLパース用オプション
+    const options: HTMLReactParserOptions = {
+      replace: (node) => {
+        if (node.type === 'tag') {
+          // 画像タグをNext.js Imageに置き換え
+          if (node.name === 'img') {
+            const { src, alt, width, height } = node.attribs;
+            return (
+              <Image
+                src={src}
+                alt={alt || ''}
+                width={width ? parseInt(width, 10) : undefined}
+                height={height ? parseInt(height, 10) : undefined}
+                className="mx-auto my-4"
+              />
+            );
+          }
+          // 順序なしリスト
+          if (node.name === 'ul') {
+            return <ul className="list-disc list-inside ml-4">{domToReact(node.children as DOMNode[], options)}</ul>;
+          }
+          // 順序ありリスト
+          if (node.name === 'ol') {
+            return <ol className="list-decimal list-inside ml-4">{domToReact(node.children as DOMNode[], options)}</ol>;
+          }
+        }
+      },
+    };
 
   return (
     <div className="container mx-auto py-12 px-4">
@@ -39,9 +70,9 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
 
         <h1 className="text-4xl font-bold mb-6">{news.title}</h1>
         
-        <div className="prose max-w-none" 
-          dangerouslySetInnerHTML={{ __html: news.content }}
-        />
+        <div className="prose max-w-none">
+          {parse(news.content, options)}
+        </div>
       </div>
     </div>
   );
