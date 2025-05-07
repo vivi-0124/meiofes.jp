@@ -15,9 +15,10 @@ export async function generateStaticParams() {
 }
 
 // 型エラーを回避
-export default async function NewsDetailPage(props: any) {
-  const id = props.params.id;
-  const news = await getNewsDetail(id);
+export default async function NewsDetailPage({ params }: { params: Promise<{ id: string }> }) {
+    // dynamic API の params を await して取得
+    const { id } = await params;
+    const news = await getNewsDetail(id);
 
   return (
     <div className="container mx-auto py-12 px-4">
@@ -32,7 +33,7 @@ export default async function NewsDetailPage(props: any) {
           <Badge variant="secondary">{news.category}</Badge>
           <div className="flex items-center text-sm text-muted-foreground">
             <CalendarDays className="h-4 w-4 mr-1" />
-            {news.publishedAt ? new Date(news.publishedAt).toLocaleDateString('ja-JP') : ''}
+            {news.publishedAt ? news.publishedAt.slice(0, 10).split('-').join('/') : ''}
           </div>
         </div>
 

@@ -47,7 +47,7 @@ export default async function Home() {
               </div>
             </div>
             <div className="flex justify-end mt-4">
-              <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/about" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                 詳しく見る
                 <ChevronRight className="h-4 w-4 inline ml-1" />
               </Link>
@@ -73,7 +73,7 @@ export default async function Home() {
               </div>
             ))}
           <div className="flex justify-end mt-4">
-            <Link href="/news" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/news" className="text-sm text-muted-foreground hover:text-accent transition-colors">
               すべてのお知らせ
               <ChevronRight className="h-4 w-4 inline ml-1" />
             </Link>

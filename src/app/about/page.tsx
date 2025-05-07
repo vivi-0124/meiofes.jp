@@ -66,7 +66,7 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent>
               <p className="text-2xl font-bold text-primary mb-4">Coming Soon...</p>
-              <p className="text-sm font-medium text-primary mb-4">今年度のテーマは準備中です。
+              <p className="text-sm font-medium text-muted-foreground mb-4">今年度のテーマは準備中です。
               <br />
               決定次第、こちらで発表いたします。</p>
             </CardContent>
