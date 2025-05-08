@@ -68,6 +68,7 @@ export default async function Home() {
                     {news.publishedAt ? new Date(news.publishedAt).toLocaleDateString('ja-JP') : ''}
                   </div>
                 </div>
+                {/* リンクの代わり */}
                 <div className="text-lg font-medium">
                   {news.title}
                 </div>

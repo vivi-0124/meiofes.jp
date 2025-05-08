@@ -2,9 +2,8 @@ import { CalendarDays } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { getNewsDetail, getNewsList } from "@/lib/microcms";
 import Link from "next/link";
-import parse, { HTMLReactParserOptions, domToReact } from 'html-react-parser';
+import parse, { HTMLReactParserOptions} from 'html-react-parser';
 import Image from 'next/image';
-import type { DOMNode } from 'html-react-parser';
 
 export const revalidate = 60;
 
@@ -38,14 +37,6 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
                 className="mx-auto my-4"
               />
             );
-          }
-          // 順序なしリスト
-          if (node.name === 'ul') {
-            return <ul className="list-disc list-inside ml-4">{domToReact(node.children as DOMNode[], options)}</ul>;
-          }
-          // 順序ありリスト
-          if (node.name === 'ol') {
-            return <ol className="list-decimal list-inside ml-4">{domToReact(node.children as DOMNode[], options)}</ol>;
           }
         }
       },
