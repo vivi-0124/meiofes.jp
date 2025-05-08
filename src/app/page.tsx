@@ -17,7 +17,7 @@ export default async function Home() {
       <div id="hero" className="flex flex-col items-center justify-center min-h-[calc(100vh-112px)] text-center">
         <div className="mb-6">
           <Image
-            src="/rogo.svg"
+            src="/32rogo.webp"
             alt="名桜大学祭2025ロゴ"
             width={320}
             height={320}

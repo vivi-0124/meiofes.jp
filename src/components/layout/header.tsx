@@ -33,13 +33,13 @@ const Header = () => {
           <div className="container mx-auto px-4 max-w-full">
             <div className="flex h-16 md:h-20 items-center justify-between">
               <div className="flex items-center space-x-3">
-                <Link href="/" className="flex items-center space-x-2">
+                <Link href="/" className="flex items-center space-x-2 px-4">
                   <Image
-                    src="/rogo.svg"
+                    src="/32rogo.webp"
                     alt="名桜大学祭2025ロゴ"
                     width={64}
                     height={64}
-                    className="h-12 md:h-16 w-auto"
+                    className="h-8 md:h-10 w-auto"
                     priority
                   />
                   <p className="text-lg">名桜大学祭</p>

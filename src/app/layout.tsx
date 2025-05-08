@@ -1,5 +1,5 @@
 import './globals.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
@@ -18,8 +18,13 @@ export const metadata: Metadata = {
   },
   keywords: ['名桜大学', '大学祭', 'イベント', '沖縄'],
   robots: 'index, follow',
-  themeColor: '#68be8d',
   category: 'event',
+};
+
+export const viewport: Viewport = {
+  themeColor: '#68be8d',
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({

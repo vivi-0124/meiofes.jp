@@ -26,11 +26,11 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
           <div className="flex items-center justify-between h-16 md:h-20 px-4">
             <Link href="/" className="flex items-center space-x-2" onClick={onClose}>
               <Image
-                src="/rogo.svg"
+                src="/32rogo.webp"
                 alt="名桜大学祭2025ロゴ"
                 width={64}
                 height={64}
-                className="h-12 md:h-16 w-auto"
+                className="h-8 md:h-10 w-auto"
                 priority
               />
               <p className="text-lg">名桜大学祭</p>
