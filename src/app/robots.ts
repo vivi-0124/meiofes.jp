@@ -10,6 +10,6 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       allow: '/',
       disallow: '/admin/',
     },
-    sitemap: 'https://www.meisei-u.ac.jp/sitemap.xml',
+    sitemap: 'https://www.meiofes.jp/sitemap.xml',
   }
 }
