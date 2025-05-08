@@ -68,9 +68,12 @@ export default async function Home() {
                     {news.publishedAt ? new Date(news.publishedAt).toLocaleDateString('ja-JP') : ''}
                   </div>
                 </div>
-                <Link href={`/news/${news.id}`} className="text-lg font-medium hover:text-primary transition-colors">
+                <div className="text-lg font-medium">
                   {news.title}
-                </Link>
+                </div>
+                {/* <Link href={`/news/${news.id}`} className="text-lg font-medium hover:text-primary transition-colors"> */}
+                  {/* {news.title} */}
+                {/* </Link> */}
               </div>
             ))}
           <div className="flex justify-end mt-4">

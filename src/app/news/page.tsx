@@ -37,14 +37,14 @@ export default async function NewsPage() {
               <CardContent>
                 <p className="text-muted-foreground">{item.description}</p>
               </CardContent>
-              <CardFooter className="flex justify-end">
+              {/* <CardFooter className="flex justify-end">
                 <Link href={`/news/${item.id}`} passHref>
                   <Button variant="ghost" size="sm">
                     続きを読む
                     <ChevronRight className="h-4 w-4 ml-1" />
                   </Button>
                 </Link>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           ))}
         </div>
