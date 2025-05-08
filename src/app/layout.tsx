@@ -7,12 +7,19 @@ import Footer from '@/components/layout/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: '名桜大学祭 2025 | 公式サイト',
+  title: {
+    default: "名桜大学祭 2025",
+    template: "%s | 名桜大学祭 2025"
+  },
   description: '11月開催の名桜大学祭2025の公式ウェブサイトです。イベント情報、出店情報、協賛のお知らせなどを掲載していきます。',
   icons: {
     icon: '/icon.png', 
     apple: '/apple-icon.png',
   },
+  keywords: ['名桜大学', '大学祭', 'イベント', '沖縄'],
+  robots: 'index, follow',
+  themeColor: '#68be8d',
+  category: 'event',
 };
 
 export default function RootLayout({
