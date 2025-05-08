@@ -19,13 +19,10 @@ export default async function Home() {
           <Image
             src="/32rogo.webp"
             alt="名桜大学祭2025ロゴ"
-            width={200}
-            height={200}
-            className="w-48 md:w-56 mx-auto"
+            width={320}
+            height={320}
+            className="w-64 md:w-80 mx-auto"
             priority
-            sizes="(max-width: 768px) 12rem, 14rem"
-            placeholder="blur"
-            blurDataURL="data:image/svg+xml;base64,..."
           />
         </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
