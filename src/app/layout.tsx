@@ -34,9 +34,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <head>
-        <link rel="preload" as="image" href="/32rogo.webp" />
-      </head>
       <body className={inter.className}>
         <div className="flex min-h-screen flex-col">
           <Header />

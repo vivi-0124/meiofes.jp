@@ -40,7 +40,6 @@ const Header = () => {
                     width={64}
                     height={64}
                     className="h-8 md:h-10 w-auto"
-                    priority
                   />
                   <p className="text-lg">名桜大学祭</p>
                 </Link>

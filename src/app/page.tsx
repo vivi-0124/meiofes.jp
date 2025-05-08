@@ -19,9 +19,10 @@ export default async function Home() {
           <Image
             src="/32rogo.webp"
             alt="名桜大学祭2025ロゴ"
-            width={320}
-            height={320}
-            className="w-64 md:w-80 mx-auto"
+            width={200}
+            height={200}
+            className="w-48 md:w-56 mx-auto"
+            sizes="(max-width: 768px) 192px, 224px"
             priority
           />
         </div>
