@@ -1,5 +1,8 @@
 import { MetadataRoute } from 'next'
 
+// このルートを静的にエクスポート
+export const dynamic = 'force-static'
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // サイトのベースURLを設定
   const baseUrl = 'https://meiofes.jp'
