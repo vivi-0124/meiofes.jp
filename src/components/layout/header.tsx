@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-50 w-full p-4">
+      <div className="sticky top-0 z-50 w-full px-4 pt-4">
         <header
           className={cn(
             "w-full transition-all duration-300 rounded-full shadow-md bg-white text-black",

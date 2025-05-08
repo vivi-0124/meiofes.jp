@@ -14,14 +14,14 @@ export default async function Home() {
 
   return (
     <div className="container mx-auto px-4">
-      <div id="hero" className="flex flex-col items-center justify-center min-h-[calc(100vh-112px)] text-center">
+      <div id="hero" className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-96px)] text-center">
         <div className="mb-6">
           <Image
-            src="/32rogo.webp"
+            src="/rogo.svg"
             alt="名桜大学祭2025ロゴ"
-            width={200}
-            height={200}
-            className="w-48 md:w-56 mx-auto"
+            width={320}
+            height={320}
+            className="w-96 mx-auto"
             sizes="(max-width: 768px) 192px, 224px"
             priority
           />
