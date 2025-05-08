@@ -1,6 +1,9 @@
 import { MetadataRoute } from 'next'
 
-export default function robots(): MetadataRoute.Robots {
+// このルートを静的にエクスポートする
+export const dynamic = 'force-static'
+
+export default async function robots(): Promise<MetadataRoute.Robots> {
   return {
     rules: {
       userAgent: '*',
