@@ -5,6 +5,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import Script from 'next/script';
 import { GA_TRACKING_ID } from '../lib/gtag';
+import GoogleAnalyticsTracker from '../components/layout/google-analytics-tracker';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -57,6 +58,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+        <GoogleAnalyticsTracker />
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>

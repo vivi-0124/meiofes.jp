@@ -1,4 +1,11 @@
 // トラッキングID
+declare global {
+  interface Window {
+    dataLayer: any[]
+    gtag: (...args: any[]) => void
+  }
+}
+
 export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS!
 
 // ページビュー計測
