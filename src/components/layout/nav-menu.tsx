@@ -27,14 +27,14 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
             <Link href="/" className="flex items-center space-x-2" onClick={onClose}>
             <Image
                     src="/rogo.svg"
-                    alt="名桜大学祭2025ロゴ"
+                    alt="名桜大学祭2025 ロゴマーク"
                     width={64}
                     height={64}
                     className="h-10 md:h-12 w-auto"
                   />
                   <Image
                     src="/名桜大学祭.svg"
-                    alt="名桜大学祭2025ロゴ"
+                    alt="名桜大学祭 テキスト"
                     width={64}
                     height={64}
                     className="h-6 md:h-8 w-auto"

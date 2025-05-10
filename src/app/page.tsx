@@ -18,37 +18,27 @@ export default async function Home() {
         <div className="mb-6">
           <Image
             src="/rogo-text.svg"
-            alt="名桜大学祭2025ロゴ"
+            alt="名桜大学祭2025 ロゴテキスト"
             width={320}
             height={320}
-            className="w-96 mx-auto"
-            sizes="(max-width: 768px) 192px, 224px"
+            className="w-[200px] md:w-[400px] mx-auto"
             priority
           />
           <Image
             src="/第32回名桜大学祭.svg"
-            alt="名桜大学祭2025ロゴ"
+            alt="第32回名桜大学祭 タイトル"
             width={320}
             height={320}
-            className="w-[300px] md:w-[500px] mx-auto mb-8"
+            className="w-[250px] md:w-[400px] mx-auto mb-4 md:mb-8"
           />
-          <div className="w-[300px] md:w-[500px] mx-auto transition-all duration-300 rounded-full shadow-md bg-white">
-            <div className="p-2">
+          <div className="w-[250px] md:w-[400px] mx-auto transition-all duration-300 rounded-full shadow-md bg-white">
               <Image
-                src="/日程.svg"
-                alt="名桜大学祭2025ロゴ"
+                src="/開催情報.svg"
+                alt="名桜大学祭2025 開催情報"
                 width={320}
                 height={320}
-                className="w-[250px] md:w-[450px] mx-auto"
+                className="w-[200px] md:w-[300px] mx-auto p-2 md:p-4"
               />
-              <Image
-                src="/場所.svg"
-                alt="名桜大学祭2025ロゴ"
-                width={320}
-                height={320}
-                className="w-[200px] md:w-[400px] mx-auto"
-              />
-            </div>
           </div>
         </div>
       </div>

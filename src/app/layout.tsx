@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: "名桜大学祭 2025",
     template: "%s | 名桜大学祭 2025"
   },
-  description: '11月開催の名桜大学祭2025の公式ウェブサイトです。イベント情報、出店情報、協賛のお知らせなどを掲載していきます。',
+  description: '「名桜大学祭」の公式ウェブサイトです。第32回名桜大学祭は「ひとやすみ」をテーマに、11月22日(土)〜23日(日)の2日間、名桜大学にて開催されます。',
   icons: {
     icon: '/rogo.svg', 
     apple: '/rogo.svg',
@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   keywords: ['名桜大学', '大学祭', 'イベント', '沖縄'],
   robots: 'index, follow',
   category: 'event',
+  alternates: {
+    canonical: 'https://www.meiofes.jp/',
+  },
 };
 
 export const viewport: Viewport = {
