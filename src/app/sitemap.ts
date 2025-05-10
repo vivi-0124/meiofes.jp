@@ -5,7 +5,7 @@ export const dynamic = 'force-static'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // サイトのベースURLを設定
-  const baseUrl = 'https://meiofes.jp'
+  const baseUrl = 'https://www.meiofes.jp/'
   
   // 静的ページの一覧
   const staticPages = [
