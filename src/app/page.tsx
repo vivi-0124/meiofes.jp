@@ -17,7 +17,7 @@ export default async function Home() {
       <div id="hero" className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-96px)] text-center">
         <div className="mb-6">
           <Image
-            src="/rogo.svg"
+            src="/rogo-text.svg"
             alt="名桜大学祭2025ロゴ"
             width={320}
             height={320}
@@ -25,14 +25,32 @@ export default async function Home() {
             sizes="(max-width: 768px) 192px, 224px"
             priority
           />
+          <Image
+            src="/第32回名桜大学祭.svg"
+            alt="名桜大学祭2025ロゴ"
+            width={320}
+            height={320}
+            className="w-[300px] md:w-[500px] mx-auto mb-8"
+          />
+          <div className="w-[300px] md:w-[500px] mx-auto transition-all duration-300 rounded-full shadow-md bg-white">
+            <div className="p-2">
+              <Image
+                src="/日程.svg"
+                alt="名桜大学祭2025ロゴ"
+                width={320}
+                height={320}
+                className="w-[250px] md:w-[450px] mx-auto"
+              />
+              <Image
+                src="/場所.svg"
+                alt="名桜大学祭2025ロゴ"
+                width={320}
+                height={320}
+                className="w-[200px] md:w-[400px] mx-auto"
+              />
+            </div>
+          </div>
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-          第32回名桜大学祭
-        </h1>
-        <p className="text-xl mb-8 max-w-2xl">
-          2025/11/22(土).23(日)<br />
-          @名桜大学キャンパス
-        </p>
       </div>
 
       <div className="max-w-6xl mx-auto my-12 grid grid-cols-1 gap-8">

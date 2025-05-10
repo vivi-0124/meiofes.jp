@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   description: '11月開催の名桜大学祭2025の公式ウェブサイトです。イベント情報、出店情報、協賛のお知らせなどを掲載していきます。',
   icons: {
-    icon: '/icon.png', 
-    apple: '/apple-icon.png',
+    icon: '/rogo.svg', 
+    apple: '/rogo.svg',
   },
   keywords: ['名桜大学', '大学祭', 'イベント', '沖縄'],
   robots: 'index, follow',

@@ -25,15 +25,20 @@ export function NavMenu({ isOpen, onClose }: NavMenuProps) {
         <div className="bg-white text-black rounded-full">
           <div className="flex items-center justify-between h-16 md:h-20 px-4">
             <Link href="/" className="flex items-center space-x-2" onClick={onClose}>
-              <Image
-                src="/32rogo.webp"
-                alt="名桜大学祭2025ロゴ"
-                width={64}
-                height={64}
-                className="h-8 md:h-10 w-auto"
-                priority
-              />
-              <p className="text-lg">名桜大学祭</p>
+            <Image
+                    src="/rogo.svg"
+                    alt="名桜大学祭2025ロゴ"
+                    width={64}
+                    height={64}
+                    className="h-10 md:h-12 w-auto"
+                  />
+                  <Image
+                    src="/名桜大学祭.svg"
+                    alt="名桜大学祭2025ロゴ"
+                    width={64}
+                    height={64}
+                    className="h-6 md:h-8 w-auto"
+                  />
             </Link>
             <Button 
               variant="ghost" 
