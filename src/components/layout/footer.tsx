@@ -53,8 +53,8 @@ const Footer = () => {
               <p>第32回名桜大学祭実行委員会</p>
               <p>〒905-8585</p>
               <p>沖縄県名護市字為又1220-1</p>
-              <p className="mt-2">Email: <a href="mailto:info@meio-festival.com" className="hover:underline">info@meio-festival.com</a></p>
-              <p>Tel: <a href="tel:0980-XX-XXXX" className="hover:underline">0980-XX-XXXX</a></p>
+              {/* <p className="mt-2">Email: <a href="mailto:info@meio-festival.com" className="hover:underline">info@meio-festival.com</a></p>
+              <p>Tel: <a href="tel:0980-XX-XXXX" className="hover:underline">0980-XX-XXXX</a></p> */}
             </address>
           </div>
         </div>
